@@ -1,3 +1,4 @@
+import 'package:first_app/screens/yamunotri_map.dart';
 import 'package:first_app/widgets/image_card.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -26,8 +27,15 @@ class yamunotri extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
-            children: const [
-              ImageCard(image: "https://uttarakhandtourism.gov.in/sites/default/files/2020-09/Yamunotri%20Temple.jpg", text:"Yamunotri Dham" ,subTitle: "Temple of Goddess Yamuna",)
+            children:  [
+              ImageCard(image: "https://uttarakhandtourism.gov.in/sites/default/files/2020-09/Yamunotri%20Temple.jpg", text:"Yamunotri Dham" ,subTitle: "Temple of Goddess Yamuna",),
+              Container(
+                height: 300,
+                width: double.infinity,
+                color: Colors.white,
+                child: MapSample(),
+
+              ),
             ],
              
             ),

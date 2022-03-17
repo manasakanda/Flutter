@@ -16,6 +16,8 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(
           child: Column(
             children: [
+
+
               UserAccountsDrawerHeader(
                 accountEmail: const Text("akhuos"),
                 accountName: const Text("ahfosu"),
@@ -43,17 +45,18 @@ class HomePage extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.help),
                 title: Text('Help and Feedback'),
-                onTap: ()=>null,
+                onTap: (){},
               ),
               ListTile(
                 leading: Icon(Icons.share_rounded),
                 title: Text('Share App'),
-                onTap: ()=>null,
+                onTap: (){},
               ),
               ListTile(
-                leading: Icon(Icons.share_rounded),
+                leading: Icon(Icons.add_alert,color: Colors.red,),
                 title: Text('Emergency'),
-                onTap: ()=>null,
+
+                onTap: () {},
               ),
 
 
@@ -78,8 +81,7 @@ class HomePage extends StatelessWidget {
         //   onPressed: () {},
         // ),
         actions: [
-          IconButton(onPressed: (){}, icon: const Icon(Icons.search),
-              color: Colors.white,),
+          IconButton(onPressed: (){}, icon: const Icon(Icons.search, color: Colors.white)),
         ],
 
 
