@@ -28,7 +28,35 @@ class HomePage extends StatelessWidget {
               ListTile(
                 leading: Icon(Icons.account_circle_sharp),
                 title: Text('My Account'),
-              )
+                onTap: ()=>null,
+              ),
+              ListTile(
+                leading: Icon(Icons.circle_notifications_rounded),
+                title: Text('Notifications'),
+                onTap: ()=>null,
+              ),
+              ListTile(
+                leading: Icon(Icons.settings),
+                title: Text('Settings'),
+                onTap: ()=>null,
+              ),
+              ListTile(
+                leading: Icon(Icons.help),
+                title: Text('Help and Feedback'),
+                onTap: ()=>null,
+              ),
+              ListTile(
+                leading: Icon(Icons.share_rounded),
+                title: Text('Share App'),
+                onTap: ()=>null,
+              ),
+              ListTile(
+                leading: Icon(Icons.share_rounded),
+                title: Text('Emergency'),
+                onTap: ()=>null,
+              ),
+
+
 
             ],
           )
